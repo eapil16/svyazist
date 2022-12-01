@@ -3367,6 +3367,73 @@ textarea.form-control {
   }
 }
 
+.news-item__image img {
+  border-radius: 10px;
+}
+
+.business-slider .main-slide__text_caption {
+  color: #fff;
+}
+
+.menu-toggle-cont_active .menu-toggle:hover {
+  &:before {
+    background: #E70406;
+  }
+  &:after {
+    background: #E70406;
+  }
+}
+
+.menu-toggle-cont:hover {
+  .menu-toggle {
+    &:before {
+      background: #E70406;
+    }
+    &:after {
+      background: #E70406;
+    }
+  }
+}
+
+.header-search {
+  position: relative;
+  height: 20px;
+}
+
+.header-search .form {
+  position: absolute;
+  right: -10px;
+  height: 30px;
+  top:-6px;
+  width: 35px;
+  border-radius: 6px;
+}
+
+.header-search .form.open {
+  width: 640px;
+  background: #F1F3F6;
+}
+
+.header-search .form .button-form {
+  top: 6px;
+  right: 10px;
+}
+
+.header-search .form .form-control {
+  position: absolute;
+  right: 40px;
+  bottom: 3px;
+  background: transparent;
+  width: 0px;
+  transition: all 400ms ease-in-out;
+  padding: 0 0 2px 0;
+  border: 0;
+  border-bottom: 0;
+}
+
+.header-search .form.open .form-control {
+  width: calc(100% - 50px);
+}
 
 @media (min-width: 1200px) {
   .modal-xl {
@@ -3380,19 +3447,486 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .swiper-slider-prev {
+    left: auto;
+    top: -65px;
+    right: 50px;
+  }
+  .swiper-slider-next {
+    right: 0;
+    top: -65px;
+  }
+  .partners-slider__content {
+    .swiper-slider-prev {
+      top: -65px;
+    } 
+    .swiper-slider-next {
+      top: -65px;
+    } 
+  }
+}
+
 @media screen and (max-width: 1199px) {
-  
+  .catalog-menu__dropdown {
+    left: 15px;
+    right: 15px;
+    width: auto;
+    top: 125px;
+  }
+  .map-cov__form {
+    width: 300px;
+    padding: 40px 30px;
+  }
+  .text-page img.full-image {
+    margin: 50px -80px;
+    width: calc(100% + 160px);
+    max-width: calc(100% + 160px);
+  }
+  .contacts-item p.address {
+    font-size: 14px;
+  }
+  .field__wrapper .button-field span {
+    font-size: 14px;
+  }
+  .cctv-form__image img {
+    height: 400px;
+    object-fit: cover;
+  }
+  .add-services__item {
+    overflow: hidden;
+  }
+  .add-services__item_image {
+    max-width: 200px;
+    min-width: 200px;
+  }
+  .cinemas-item p {
+    height: 55px;
+  }
+  .cinemas-item p.price {
+    height: auto;
+  }
+  .tv-slider .caption-block-slide__image {
+    bottom: 0;
+  }
+  .tv-slider .caption-block-slide__image img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+  .internet-slider .caption-block-slide__image img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+  .internet-slider .caption-block-slide__text {
+    padding: 25px 0px 25px 80px;
+    max-width: 380px;
+  }
+  .internet-slider .caption-block-slide__image {
+    bottom: 0;
+  }
+  .caption-block-slide__image {
+    min-width: 530px;
+    max-width: 530px;
+  }
+  .caption-block-slide__text {
+    padding: 25px 0px 25px 80px;
+    min-width: 330px;
+  }
+  .internet-block__text h2 {
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0 0 20px 0;
+  } 
+  .header-block__logo {
+    min-width: 140px;
+    max-width: 140px;
+  }
+  .header-bottom__menu_item {
+    margin: 0 20px 0 0;
+  }
+  .header-search .form.open {
+    width: 460px;
+  }
+  .fixed-menu {
+    left: 15px;
+    width: auto;
+    right: 15px;
+    top: 125px;
+  }
+  .header_fixed .fixed-menu {
+    top: 80px;
+  }
+  .main-slide__image {
+    min-width: 540px;
+    max-width: 540px;
+  }
+  .main-slide__text {
+    margin: 0 20px 0 80px;
+  }
+  .footer-flex p.dev {
+    font-size: 14px;
+  }
+  .main-map {
+    background: #F1F3F6 url(../images/map.png) top left no-repeat;
+    background-size: contain;
+  }
 }
 
 @media screen and (max-width: 991px) {
-  
+  .odds-business__item {
+    padding: 20px;
+  }
+  .catalog-menu__dropdown {
+    top: 175px;
+  }
+  .partners-business h2 {
+    margin: 0 100px 30px 0;
+  }
+  .for-business__odds {
+    .main-catalog__item {
+      width: calc(25% - 30px);
+    }
+  }
+  .docs-item {
+    align-items: flex-start;
+  }
+  .text-page img.full-image {
+    margin: 50px 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .text-page {
+    margin: 40px auto 70px;
+  }
+  .company-content img {
+    display: none;
+  }
+  .contacts-maps__form {
+    width: 300px;
+    padding: 40px 20px;
+  }
+  .contacts-item p.address {
+    font-size: 15px;
+  }
+  .contacts-item__block {
+    margin: 0 0 25px 0;
+  }
+  .letter-director__form {
+    padding: 30px 20px;
+  }
+  .add-services__item {
+    justify-content: space-between;
+  }
+  .cinemas-item {
+    margin: 0 0 20px 0;
+  }
+  .internet-slider .caption-block-slide {
+    background: #eaeaea;
+  }
+  .internet-slider .caption-block-slide__image {
+    display: none;
+  }
+  .header-block {
+    display: block;
+  }
+  .header-block__logo {
+    min-width: 120px;
+    max-width: 120px;
+  }
+  .header-block__content_top {
+    margin: 10px 0 0;
+  }
+  .header-bottom__menu_link {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .fixed-menu {
+    top: 175px; 
+  }
+  .header_fixed .header-block__logo {
+    display: none;
+  }
+  .header_fixed .header-block__content_top {
+    margin: 0;
+  }
+  .header_fixed {
+    padding: 15px 0 12px
+  }
+  .header_fixed .fixed-menu {
+    top: 60px;
+  }
+  .header-phones {
+    display: none;
+  }
+  .header-search .form.open {
+    width: 545px;
+  }
+  .main-section {
+    margin-top: 160px;
+  }
+  .main-slide__image {
+    min-width: 500px;
+    max-width: 500px;
+  }
+  .main-slide__text {
+    width: 100%;
+    min-width: 240px;
+  }
+  .main-slide {
+    overflow: hidden;
+  }
+  .main-slide__text_caption {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .main-catalog-flex {
+    flex-wrap: wrap;
+  }
+  .main-catalog__item {
+    flex: auto;
+    margin: 15px;
+    width: calc(33% - 30px);
+  }  
+  .main-odds-flex {
+      flex-wrap: wrap;
+  }
+  .main-odds__item {
+    flex: auto;
+    margin: 0 15px 30px;
+    width: calc(50% - 30px);
+  }
+  .channel-modal .tabs-links .nav-tabs .nav-link.active {
+    border-color: transparent;
+  }
+  .tabs-links .nav-tabs .nav-link {
+    padding: 0 18px 15px 0;
+  }
+  .equipment-modal__text {
+    margin-top: 20px;
+  }
+  .footer-flex p.dev {
+    display: block;
+  }
+  .footer-flex p.dev img {
+    margin: 7px 0 0 0;
+  }
+  .header-block__content_bottom_button a.button-link {
+    font-size: 16px;
+  }
+  .internet-bz-slider .caption-block-slide {
+    background: #8b8b8b;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  
-}
-
-@media screen and (max-width: 575px) {
+  .catalog-menu__dropdown {
+    bottom: 15px;
+    overflow: auto;
+    padding: 25px 20px 0;
+  }
+  .for-business__odds .main-catalog__item {
+    width: calc(50% - 30px);
+  }
+  .map-cov__form {
+    width: 100%;
+    padding: 40px 0px;
+    position: initial;
+    box-shadow: none;
+  }
+  .error-block__content {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .error-block {
+    padding: 60px 0;
+  }
+  .tabs-links .nav-tabs .nav-link.active {
+    border-color: transparent;
+  }
+  .letter-director__form {
+    margin: 0 0 25px 0;
+  }
+  .cctv-small-slider {
+    margin: 20px 0 0 0;
+  }
+  .cctv-form__text_content {
+    max-width: 100%;
+    min-width: auto;
+  }
+  .cctv-form__image {
+    display: none;
+  }
+  .cctv-form__text {
+    padding: 30px 20px;
+  }
+  .cinemas-item p {
+    height: auto;
+  }
+  .tv-slider .caption-block-slide__text {
+    padding: 25px 80px;
+    max-width: 100%;
+  }
+  .tv-slider .caption-block-slide__image {
+    display: none;
+  }
+  .internet-slider .caption-block-slide__text {
+    padding: 25px;
+    max-width: 100%;
+  }
+  .header-search .form.open {
+    width: 365px;
+  }
+  .caption-block-slide__text {
+    padding: 25px;
+    min-width: auto;
+    width: 100%;
+  }
+  .caption-block-slide__image {
+    display: none;
+  }
+  .caption-block-slide {
+    min-height: 250px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .internet-block__image {
+    display: none;
+  }
+  .header-bottom__menu_item:nth-child(4) {
+    display: none;
+  }
+  .header-bottom__menu_item:nth-child(5) {
+    display: none;
+  }
+  .fixed-menu {
+    bottom: 15px;
+    overflow: auto;
+  }
+  .main-menu {
+    margin: 0 0 30px 0;
+  }
+  .fixed-menu {
+    padding: 25px 20px 0;
+  }
+  .rates-caption__button {
+    margin: 0 0 0 10px;
+  }
+  .main-map {
+    background: #F1F3F6;
+    background-size: contain;
+    padding: 30px 20px;
+  }
+  .main-map__content p {
+    margin: 0 0 15px 0;
+  }
+  .footer-block {
+    display: none;
+  }
+  .footer-flex p.dev {
+    display: flex;
+  }
+  .footer-flex p.dev img {
+    margin: 0 0 0 10px;
+  }
+  .footer {
+    padding: 30px 0 25px;
+  }
+  .swiper-prev {
+    display: none;
+  }
+  .swiper-next {
+    display: none;
+  } 
+}  
  
+@media screen and (max-width: 575px) {
+  .header-search {
+    display: none;
+  }
+  .vacancies-item__caption {
+    display: block;
+  }
+  .vacancies-item__caption p.price {
+    margin-top: 10px;
+  }
+  .payment-methods__item_image {
+    display: none;
+  }
+  .payment-methods__item {
+    height: 250px;
+  }
+  .contacts-maps__form {
+    width: 100%;
+    position: initial;
+    margin: 0 0 20px 0;
+  }
+  .inside-block h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .add-services__item_image {
+    max-width: 170px;
+    min-width: 170px;
+  }
+  .add-services__item_text {
+    padding: 30px 0px 30px 15px;
+  }
+  .tv-slider .caption-block-slide__text {
+    padding: 25px;
+  }
+  .header-personal-area a.link span {
+    display: none;
+  }
+  .header-bottom__menu_item:nth-child(3) {
+    display: none;
+  }
+  .main-slide__image {
+    display: none;
+  }
+  .main-slide__text {
+    min-width: auto;
+    width: 100%;
+    margin: 20px;
+  }
+  .swiper-prev {
+    display: none;
+  }
+  .swiper-next {
+    display: none;
+  }
+  .main-catalog__item {
+    width: calc(50% - 30px);
+  }
+  .main-odds__item {
+    width: calc(100% - 30px);
+  }
+  .main-odds__item {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    margin: 0 5px 10px;
+    width: calc(50% - 10px);
+  }
+  .main-odds-flex {
+    margin: 0 -5px;
+  }
+  .rates-caption {
+    display: block;
+  }
+  .rates-caption__button {
+    display: inline-block;
+    margin: 10px 0 0;
+  }
+  .channel-list {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  .main-section {
+    overflow: hidden;
+  }
 }
 
