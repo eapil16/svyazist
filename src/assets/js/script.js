@@ -28,15 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
             collection.forEach(e => e.classList.remove('active'));
             const collectionPromt = document.querySelectorAll('.rates-card-prompt');
             collectionPromt.forEach(e => e.classList.remove('show'));
+            const collLinks = document.querySelectorAll('.link-prompt');
+            collLinks.forEach(e => e.classList.remove('active'));
             const target = e.target.closest('.swiper-slide');
             target.classList.add('active');
-            target.querySelector('.rates-card-prompt').classList.add('show');  
+            e.target.closest('.rates-card__values_item').querySelector('.link-prompt').classList.add('active');
+            e.target.closest('.rates-card__values_item').querySelector('.rates-card-prompt').classList.add('show');  
         }
         if(!e.target.closest('.link-prompt') && !e.target.closest('.rates-card-prompt')) {
             const collection = document.querySelectorAll('.swiper-slide');
             collection.forEach(e => e.classList.remove('active'));
             const collectionPromt = document.querySelectorAll('.rates-card-prompt');
             collectionPromt.forEach(e => e.classList.remove('show'));
+            const collLinks = document.querySelectorAll('.link-prompt');
+            collLinks.forEach(e => e.classList.remove('active'));
         }
         if(e.target.closest('.catalog-menu__bisiness')) {
             const coll = document.querySelectorAll('.catalog-menu__dropdown');
@@ -46,6 +51,29 @@ document.addEventListener('DOMContentLoaded', () => {
             $('.fixed-menu').fadeOut(); 
             $('.menu-toggle-cont').removeClass('menu-toggle-cont_active'); 
             $('body').addClass('hidd'); 
+        }
+        if(e.target.closest('.channel-list a')) {
+            e.preventDefault();
+            const collBlock = document.querySelectorAll('.channel-list__block');
+            collBlock.forEach(e => e.classList.remove('show'));
+            const collLinks = document.querySelectorAll('.channel-list a');
+            collLinks.forEach(e => e.classList.remove('active'));
+            
+            e.target.classList.add('active');
+            e.target.closest('.channel-list li').querySelector('.channel-list__block').classList.add('show');
+        }
+        if(e.target.closest('.channel-list__block__close')) {
+            e.preventDefault();
+            const collBlock = document.querySelectorAll('.channel-list__block');
+            collBlock.forEach(e => e.classList.remove('show'));
+            const collLinks = document.querySelectorAll('.channel-list a');
+            collLinks.forEach(e => e.classList.remove('active'));
+        }
+        if(!e.target.closest('.channel-list__block') && !e.target.closest('.channel-list a'))  {
+            const collBlock = document.querySelectorAll('.channel-list__block');
+            collBlock.forEach(e => e.classList.remove('show'));
+            const collLinks = document.querySelectorAll('.channel-list a');
+            collLinks.forEach(e => e.classList.remove('active'));
         }
         if(!e.target.closest('.catalog-menu__bisiness') && !e.target.closest('.catalog-menu__dropdown')  && !e.target.closest('.menu-toggle-cont')  && !e.target.closest('.fixed-menu '))  {
             const coll = document.querySelectorAll('.catalog-menu__dropdown');
@@ -96,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const ratesSlider = new Swiper(".rates-slider", {
         allowTouchMove: true,
-        slidesPerView: 'auto',
+        slidesPerView: 1.2,
         // loop: true,
         spaceBetween: 20,
         speed: 800,
@@ -107,6 +135,17 @@ document.addEventListener('DOMContentLoaded', () => {
         pagination: {
             el: ".rates-pagination",
             type: "progressbar",
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 4,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            }
         },
     });
 
@@ -234,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const internetotherSlider = new Swiper(".internet-other", {
         allowTouchMove: true,
-        slidesPerView: 'auto',
+        slidesPerView: 1.2,
         // loop: true,
         spaceBetween: 20,
         speed: 800,
@@ -245,6 +284,17 @@ document.addEventListener('DOMContentLoaded', () => {
         pagination: {
             el: ".internet-other-pagination",
             type: "progressbar",
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 4,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            }
         },
     });
 
